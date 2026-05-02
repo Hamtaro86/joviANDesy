@@ -1,0 +1,865 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Undangan Pernikahan Jovian & Desy</title>
+    <meta
+      name="description"
+      content="Undangan pernikahan digital Jovian Renaldo dan Desy Linsa."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Noto+Serif+SC:wght@400;600;700&family=Playfair+Display:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+:root {
+  color-scheme: light;
+  --ink: #35201f;
+  --muted: #7d5f57;
+  --imperial: #7d1617;
+  --red: #a71920;
+  --cinnabar: #c43a2f;
+  --ruby: #5b0f14;
+  --rose: #f5c7bd;
+  --jade: #9eb7a1;
+  --gold: #d8ae64;
+  --deep-gold: #9c6b2d;
+  --cream: #fff7e8;
+  --paper: rgba(255, 248, 232, 0.92);
+  --line: rgba(216, 174, 100, 0.38);
+  --shadow: 0 24px 70px rgba(68, 22, 18, 0.22);
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background:
+    linear-gradient(135deg, rgba(125, 22, 23, 0.08) 0 25%, transparent 25% 50%, rgba(216, 174, 100, 0.09) 50% 75%, transparent 75%),
+    linear-gradient(180deg, #fff7e8 0%, #f9e0d1 44%, #edf2e9 100%);
+  background-size: 28px 28px, auto;
+  color: var(--ink);
+  font-family: "Plus Jakarta Sans", system-ui, sans-serif;
+  letter-spacing: 0;
+}
+body.invitation-locked { overflow: hidden; }
+body::before {
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  background-image:
+    linear-gradient(rgba(125, 22, 23, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(156, 107, 45, 0.06) 1px, transparent 1px);
+  background-size: 42px 42px;
+  content: "";
+}
+main { overflow: hidden; }
+section { position: relative; padding: clamp(72px, 10vw, 120px) clamp(18px, 4vw, 72px); }
+.hero { min-height: 96vh; display: grid; place-items: end center; isolation: isolate; padding-bottom: clamp(56px, 9vw, 100px); }
+.hero-media, .hero-shade { position: absolute; inset: 0; }
+.hero-media { z-index: -3; background: linear-gradient(135deg, #6c1217, #fff0d5); }
+.hero-media img { width: 100%; height: 100%; object-fit: cover; filter: sepia(0.16) saturate(0.92) contrast(1.03); }
+.hero-shade {
+  z-index: -2;
+  background:
+    linear-gradient(180deg, rgba(56, 9, 13, 0.12), rgba(56, 9, 13, 0.78)),
+    linear-gradient(90deg, rgba(125, 22, 23, 0.2), rgba(216, 174, 100, 0.08), rgba(55, 26, 14, 0.24));
+}
+.hero-content { width: min(760px, 100%); color: #fff8e9; text-align: center; text-shadow: 0 2px 18px rgba(45, 14, 12, 0.5); }
+.eyebrow { margin: 0 0 12px; color: var(--gold); font-family: "Cinzel", serif; font-size: 0.78rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; }
+h1, h2, h3 { margin: 0; font-family: "Playfair Display", "Noto Serif SC", serif; font-weight: 700; line-height: 1.04; }
+h1 { font-size: clamp(4.2rem, 14vw, 9.6rem); }
+.name-stack {
+  display: grid;
+  justify-items: center;
+  gap: 0.04em;
+  line-height: 0.86;
+}
+
+.name-stack span {
+  display: block;
+}
+
+.name-amp {
+  font-size: 0.62em;
+  line-height: 0.8;
+}
+<h1 class="hero-title">
+  <span>Jovian</span>
+  <span class="hero-amp">&amp;</span>
+  <span>Desy</span>
+</h1><h1 class="hero-title">
+  <span>Jovian</span>
+  <span class="hero-amp">&amp;</span>
+  <span>Desy</span>
+</h1>h2 { font-size: clamp(2.3rem, 6vw, 4.7rem); }
+h3 { font-size: clamp(1.55rem, 3vw, 2.35rem); }
+.hanzi { margin: 12px 0; font-family: "Noto Serif SC", serif; font-size: clamp(1.3rem, 3.6vw, 2.4rem); font-weight: 700; }
+.hanzi.small { font-size: 1.15rem; }
+.date { margin: 12px 0 28px; font-family: "Cinzel", serif; font-size: clamp(1rem, 2vw, 1.35rem); font-weight: 600; }
+.hero-guest {
+  margin: 0 auto 24px;
+  max-width: 34rem;
+  color: rgba(255, 248, 233, 0.86);
+  font-weight: 600;
+  line-height: 1.55;
+}
+.hero-guest span {
+  display: block;
+  margin-top: 6px;
+  color: #f6d68a;
+  font-family: "Playfair Display", "Noto Serif SC", serif;
+  font-size: clamp(1.45rem, 3.8vw, 2.25rem);
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+.primary-button, .text-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  border: 1px solid rgba(255, 226, 164, 0.52);
+  border-radius: 999px;
+  padding: 0 24px;
+  background: linear-gradient(135deg, var(--imperial), var(--cinnabar));
+  color: #fff8e9;
+  box-shadow: 0 12px 32px rgba(125, 22, 23, 0.28);
+  cursor: pointer;
+  font: inherit;
+  font-weight: 700;
+  text-decoration: none;
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+.primary-button:hover, .text-button:hover { transform: translateY(-2px); box-shadow: 0 16px 36px rgba(125, 22, 23, 0.32); }
+.text-button { min-height: 42px; margin-top: 16px; background: #fff7e8; color: var(--imperial); }
+.section-heading { width: min(900px, 100%); margin: 0 auto 38px; text-align: center; }
+.section-heading::after {
+  display: block;
+  width: min(280px, 64vw);
+  height: 16px;
+  margin: 20px auto 0;
+  background:
+    linear-gradient(90deg, transparent, var(--gold), transparent),
+    linear-gradient(90deg, transparent 0 45%, var(--imperial) 45% 55%, transparent 55%);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 1px, 36px 16px;
+  content: "";
+}
+.couple-section, .event-section, .wish-section {
+  background:
+    linear-gradient(90deg, transparent, rgba(255, 248, 232, 0.82), transparent),
+    repeating-linear-gradient(135deg, rgba(216, 174, 100, 0.08) 0 1px, transparent 1px 20px);
+}
+.couple-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) clamp(108px, 9vw, 140px) minmax(0, 1fr);
+  gap: clamp(22px, 3vw, 42px);
+  align-items: center;
+  width: min(1400px, 100%);
+  margin: 0 auto;
+}
+.profile-card, .event-card {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: clamp(24px, 4vw, 40px);
+  background:
+    linear-gradient(180deg, rgba(255, 248, 232, 0.96), rgba(255, 242, 218, 0.88)),
+    var(--paper);
+  box-shadow: var(--shadow);
+  text-align: center;
+  backdrop-filter: blur(14px);
+}
+.profile-card {
+  display: flex;
+  min-height: clamp(320px, 25vw, 370px);
+  flex-direction: column;
+  justify-content: center;
+}
+.profile-card::before, .event-card::before {
+  position: absolute;
+  top: 12px;
+  right: 14px;
+  color: rgba(216, 174, 100, 0.22);
+  font-family: "Noto Serif SC", serif;
+  font-size: 5.4rem;
+  line-height: 1;
+  content: "囍";
+}
+.profile-card > *, .event-card > * { position: relative; }
+.profile-card p, .event-card p, .rsvp-section p { color: var(--muted); font-size: 1rem; line-height: 1.75; }
+.profile-card span { color: var(--red); }
+.role { color: var(--deep-gold) !important; font-family: "Cinzel", serif; font-size: 0.75rem !important; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; }
+.double-happiness {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  min-height: auto;
+  color: var(--imperial);
+  font-family: "Noto Serif SC", serif;
+  font-size: clamp(3.4rem, 8vw, 6rem);
+  text-shadow: 0 14px 30px rgba(125, 22, 23, 0.18);
+}
+.double-happiness::before {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  aspect-ratio: 1;
+  border: 1px solid rgba(216, 174, 100, 0.48);
+  background: rgba(255, 248, 232, 0.72);
+  box-shadow: 0 18px 42px rgba(68, 22, 18, 0.14);
+  content: "囍";
+}
+.countdown { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; width: min(760px, 100%); margin: 0 auto 34px; }
+.countdown div { border: 1px solid var(--line); border-radius: 8px; padding: 18px 10px; background: rgba(255, 248, 232, 0.82); text-align: center; }
+.countdown strong { display: block; color: var(--imperial); font-family: "Cinzel", serif; font-size: clamp(1.8rem, 5vw, 3rem); }
+.countdown span { color: var(--muted); font-size: 0.83rem; font-weight: 700; }
+.event-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px; width: min(960px, 100%); margin: 0 auto; }
+.gallery-section { background: #fff7e8; }
+.gallery { display: grid; grid-template-columns: 1.15fr 0.85fr; grid-auto-rows: minmax(220px, 30vw); gap: 14px; width: min(1120px, 100%); margin: 0 auto; }
+.gallery img { width: 100%; height: 100%; border: 1px solid rgba(216, 174, 100, 0.34); border-radius: 8px; object-fit: cover; box-shadow: 0 18px 44px rgba(68, 22, 18, 0.16); }
+.gallery img:first-child { grid-row: span 2; }
+.wish-form, .wish-list { width: min(760px, 100%); margin: 0 auto; }
+.wish-form { display: grid; gap: 12px; }
+input, textarea { width: 100%; border: 1px solid var(--line); border-radius: 8px; padding: 15px 16px; background: rgba(255, 248, 232, 0.88); color: var(--ink); font: inherit; outline-color: rgba(167, 25, 32, 0.35); }
+textarea { resize: vertical; }
+.wish-list { display: grid; gap: 12px; margin-top: 22px; }
+.wish-item { border-left: 3px solid var(--gold); border-radius: 8px; padding: 16px 18px; background: rgba(255, 248, 232, 0.84); box-shadow: 0 12px 30px rgba(68, 22, 18, 0.1); animation: riseIn 360ms ease both; }
+.wish-item strong { display: block; color: var(--imperial); margin-bottom: 4px; }
+.wish-item p { margin: 0; color: var(--muted); line-height: 1.65; }
+.wish-toast { position: fixed; left: 18px; bottom: 96px; z-index: 22; width: min(360px, calc(100vw - 36px)); border: 1px solid rgba(216, 174, 100, 0.42); border-radius: 8px; padding: 16px 18px; background: rgba(255, 248, 232, 0.95); box-shadow: 0 18px 46px rgba(68, 22, 18, 0.22); opacity: 0; transform: translateY(14px); pointer-events: none; transition: opacity 220ms ease, transform 220ms ease; backdrop-filter: blur(14px); }
+.wish-toast.show { opacity: 1; transform: translateY(0); }
+.wish-toast strong { display: block; margin-bottom: 4px; color: var(--imperial); }
+.wish-toast p { margin: 0; color: var(--muted); line-height: 1.55; }
+.rsvp-section { display: flex; gap: 24px; align-items: center; justify-content: space-between; background: linear-gradient(135deg, rgba(125, 22, 23, 0.12), rgba(216, 174, 100, 0.18)), #fff7e8; }
+.rsvp-section > div { max-width: 760px; }
+.music-toggle { position: fixed; right: 18px; bottom: 18px; z-index: 20; display: flex; gap: 12px; align-items: center; max-width: min(360px, calc(100vw - 36px)); border: 1px solid rgba(216, 174, 100, 0.42); border-radius: 999px; padding: 10px 16px 10px 10px; background: rgba(255, 248, 232, 0.92); color: var(--ink); box-shadow: 0 16px 42px rgba(68, 22, 18, 0.2); cursor: pointer; backdrop-filter: blur(14px); }
+.music-icon { display: grid; place-items: center; width: 38px; height: 38px; flex: 0 0 38px; border-radius: 50%; background: var(--imperial); color: #fff8e9; font-size: 1.35rem; }
+.music-toggle strong, .music-toggle small { display: block; max-width: 230px; overflow: hidden; text-align: left; text-overflow: ellipsis; white-space: nowrap; }
+.music-toggle small { color: var(--muted); }
+.petal-field, .snow-field { position: fixed; inset: 0; z-index: 10; pointer-events: none; overflow: hidden; }
+.petal, .snow { position: absolute; top: -10vh; opacity: 0.82; animation-name: fall; animation-timing-function: linear; animation-iteration-count: infinite; }
+.petal { width: 14px; height: 10px; border-radius: 80% 0 80% 0; background: linear-gradient(135deg, #ffd4c9, #c43a2f); transform: rotate(24deg); }
+.snow { width: 5px; height: 5px; border-radius: 50%; background: rgba(255, 248, 232, 0.9); box-shadow: 0 0 8px rgba(255, 248, 232, 0.82); }
+
+.envelope-gate {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background:
+    linear-gradient(135deg, rgba(54, 8, 12, 0.96), rgba(125, 22, 23, 0.96)),
+    repeating-linear-gradient(45deg, rgba(216, 174, 100, 0.12) 0 1px, transparent 1px 18px);
+  color: #fff8e9;
+  transition: opacity 520ms ease, visibility 520ms ease;
+}
+.envelope-gate::before {
+  position: absolute;
+  inset: 18px;
+  border: 1px solid rgba(216, 174, 100, 0.36);
+  content: "";
+  pointer-events: none;
+}
+.envelope-gate.hidden { visibility: hidden; opacity: 0; pointer-events: none; }
+.envelope-stage { position: relative; width: min(430px, 100%); text-align: center; }
+.envelope-stage .eyebrow { color: #f6d68a; }
+.guest-recipient {
+  margin: 14px auto 0;
+  max-width: 32rem;
+  color: rgba(255, 248, 233, 0.82);
+  font-weight: 600;
+  line-height: 1.55;
+}
+.guest-recipient span {
+  display: block;
+  margin-top: 6px;
+  color: #f6d68a;
+  font-family: "Playfair Display", "Noto Serif SC", serif;
+  font-size: clamp(1.35rem, 4vw, 2.1rem);
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+.envelope {
+  position: relative;
+  height: 330px;
+  margin: 18px auto 24px;
+  perspective: 1200px;
+  cursor: pointer;
+  filter: drop-shadow(0 28px 40px rgba(31, 4, 7, 0.44));
+}
+.envelope-back {
+  position: absolute;
+  inset: 92px 0 18px;
+  z-index: 1;
+  border: 1px solid rgba(255, 226, 164, 0.5);
+  border-radius: 8px;
+  background: linear-gradient(145deg, #7d1617, #b52325 52%, #6a1115);
+  overflow: hidden;
+}
+.envelope-back::before {
+  position: absolute;
+  inset: 14px;
+  border: 1px solid rgba(255, 226, 164, 0.34);
+  background:
+    linear-gradient(90deg, transparent 45%, rgba(216, 174, 100, 0.24) 45% 55%, transparent 55%),
+    repeating-linear-gradient(135deg, rgba(255, 226, 164, 0.12) 0 1px, transparent 1px 15px);
+  content: "";
+}
+.envelope-card {
+  position: absolute;
+  right: 9%;
+  bottom: 76px;
+  left: 9%;
+  z-index: 2;
+  min-height: 194px;
+  border: 1px solid rgba(216, 174, 100, 0.72);
+  border-radius: 8px;
+  padding: 22px 18px 20px;
+  background:
+    linear-gradient(180deg, rgba(255, 248, 232, 0.98), rgba(255, 238, 199, 0.94));
+  color: var(--ink);
+  opacity: 0;
+  transform: translateY(136px) scale(0.98);
+  transition:
+    opacity 420ms ease,
+    transform 900ms cubic-bezier(0.2, 0.85, 0.2, 1);
+}
+.envelope-card strong {
+  display: block;
+  color: var(--imperial);
+  font-family: "Playfair Display", "Noto Serif SC", serif;
+  font-size: clamp(1.85rem, 7vw, 3.2rem);
+  line-height: 1;
+}
+.envelope-date {
+  display: block;
+  margin-top: 10px;
+  color: var(--deep-gold);
+  font-family: "Cinzel", serif;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+.envelope-to {
+  margin: 14px 0 4px;
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+.guest-name {
+  display: block;
+  color: var(--imperial);
+  font-family: "Playfair Display", "Noto Serif SC", serif;
+  font-size: clamp(1.15rem, 4.8vw, 1.7rem);
+  font-weight: 700;
+  line-height: 1.16;
+  overflow-wrap: anywhere;
+}
+.envelope-flap {
+  position: absolute;
+  top: 92px;
+  right: 0;
+  left: 0;
+  z-index: 5;
+  height: 150px;
+  border: 1px solid rgba(255, 226, 164, 0.46);
+  background: linear-gradient(165deg, #c43a2f, #7d1617 68%);
+  clip-path: polygon(0 0, 100% 0, 50% 100%);
+  transform-origin: top center;
+  transition: transform 900ms cubic-bezier(0.2, 0.85, 0.2, 1);
+}
+.envelope-pocket-left, .envelope-pocket-right {
+  position: absolute;
+  bottom: 18px;
+  z-index: 4;
+  width: 50%;
+  height: 150px;
+  border-bottom: 1px solid rgba(255, 226, 164, 0.46);
+  background: linear-gradient(150deg, #a71920, #681014);
+}
+.envelope-pocket-left {
+  left: 0;
+  clip-path: polygon(0 0, 100% 100%, 0 100%);
+  border-left: 1px solid rgba(255, 226, 164, 0.46);
+  border-radius: 0 0 0 8px;
+}
+.envelope-pocket-right {
+  right: 0;
+  clip-path: polygon(100% 0, 100% 100%, 0 100%);
+  border-right: 1px solid rgba(255, 226, 164, 0.46);
+  border-radius: 0 0 8px 0;
+}
+.envelope-seal {
+  position: absolute;
+  top: 172px;
+  left: 50%;
+  z-index: 7;
+  display: grid;
+  place-items: center;
+  width: 78px;
+  aspect-ratio: 1;
+  border: 2px solid rgba(255, 226, 164, 0.78);
+  border-radius: 50%;
+  background: radial-gradient(circle, #d8ae64, #9c6b2d);
+  color: #6a1115;
+  font-family: "Noto Serif SC", serif;
+  font-size: 2.6rem;
+  font-weight: 700;
+  transform: translateX(-50%);
+  transition: opacity 420ms ease, transform 620ms ease;
+}
+.gate-title {
+  margin: 0;
+  color: #fff8e9;
+  font-family: "Playfair Display", "Noto Serif SC", serif;
+  font-size: clamp(2.2rem, 9vw, 4rem);
+  line-height: 1;
+  text-shadow: 0 10px 30px rgba(31, 4, 7, 0.44);
+}
+.gate-copy { margin: 10px auto 0; max-width: 32rem; color: rgba(255, 248, 233, 0.78); line-height: 1.7; }
+.envelope-gate.opening .envelope-flap { transform: rotateX(-168deg); }
+.envelope-gate.opening .envelope-card {
+  z-index: 8;
+  opacity: 1;
+  transform: translateY(-84px) scale(1);
+  transition-delay: 2s;
+}
+.envelope-gate.opening .envelope-flap,
+.envelope-gate.opening .envelope-pocket-left,
+.envelope-gate.opening .envelope-pocket-right {
+  z-index: 2;
+}
+.envelope-gate.opening .envelope-seal { opacity: 0; transform: translateX(-50%) scale(0.72); }
+.envelope-gate.opening .primary-button { pointer-events: none; opacity: 0.82; }
+
+@keyframes fall { 0% { transform: translate3d(0, -10vh, 0) rotate(0deg); } 100% { transform: translate3d(var(--drift), 112vh, 0) rotate(540deg); } }
+@keyframes riseIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+@media (max-width: 760px) {
+  section { padding: 64px 18px; }
+  .couple-grid, .event-grid, .gallery { grid-template-columns: 1fr; }
+  .double-happiness { width: 100%; min-height: auto; }
+  .countdown { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .gallery { grid-auto-rows: 260px; }
+  .gallery img:first-child { grid-row: span 1; }
+  .rsvp-section { display: grid; text-align: center; }
+  .rsvp-section .primary-button { width: 100%; }
+  .envelope { height: 314px; }
+  .envelope-card { right: 7%; left: 7%; }
+}
+    </style>
+  </head>
+  <body class="invitation-locked">
+    <div class="envelope-gate" id="envelopeGate" role="dialog" aria-modal="true" aria-labelledby="gateTitle">
+      <div class="envelope-stage">
+        <p class="eyebrow">You're Invited</p>
+        <h2 class="gate-title name-stack" id="gateTitle">
+  <span>Jovian</span>
+  <span class="name-amp">&amp;</span>
+  <span>Desy</span>
+</h2>
+        <p class="gate-copy">Ketuk amplop merah untuk membuka undangan pernikahan kami.</p>
+        <p class="guest-recipient">
+          Kepada Yth.
+          <span id="gateGuest">Bapak/Ibu/Saudara/i</span>
+        </p>
+        <div class="envelope" id="envelope" aria-hidden="true">
+          <div class="envelope-back"></div>
+          <div class="envelope-card">
+            <strong>囍</strong>
+            <span class="envelope-date">24 - 25 April 2027</span>
+            <p class="envelope-to">Kepada Yth.</p>
+            <span class="guest-name" id="cardGuest">Bapak/Ibu/Saudara/i</span>
+          </div>
+          <div class="envelope-flap"></div>
+          <div class="envelope-pocket-left"></div>
+          <div class="envelope-pocket-right"></div>
+          <div class="envelope-seal">囍</div>
+        </div>
+        <button class="primary-button" id="openEnvelope" type="button">Buka Undangan</button>
+      </div>
+    </div>
+
+    <div class="petal-field" aria-hidden="true"></div>
+    <div class="snow-field" aria-hidden="true"></div>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-media">
+          <img
+            src="https://hamtaro86.github.io/joviANDesy/retouch_2025052822390426.jpg"
+            alt="Foto Jovian dan Desy"
+          />
+        </div>
+        <div class="hero-shade"></div>
+        <div class="hero-content">
+          <p class="eyebrow">Wedding Invitation</p>
+<h1 class="name-stack">
+  <span>Jovian</span>
+  <span class="name-amp">&amp;</span>
+  <span>Desy</span>
+</h1>
+          <p class="hanzi">&#x8449;&#x5C0F;&#x9F8D; & &#x8A31;&#x96EA;&#x742A;</p>
+          <p class="date">24 - 25 April 2027</p>
+          <p class="hero-guest">
+            Kepada Yth.
+            <span id="heroGuest">Bapak/Ibu/Saudara/i</span>
+          </p>
+          <button class="primary-button" id="openInvitation" type="button">
+            Lihat Detail
+          </button>
+        </div>
+      </section>
+
+      <section class="couple-section" id="couple">
+        <div class="section-heading">
+          <p class="eyebrow">The Wedding of</p>
+          <h2 class="name-stack">
+  <span>Jovian</span>
+  <span class="name-amp">&amp;</span>
+  <span>Desy</span>
+</h2>
+          <p class="hanzi small">&#x8449;&#x5C0F;&#x9F8D; & &#x8A31;&#x96EA;&#x742A;</p>
+        </div>
+
+        <div class="couple-grid">
+          <article class="profile-card">
+            <p class="role">Mempelai Pria</p>
+            <h3>Jovian Renaldo</h3>
+            <p class="hanzi small">&#x8449;&#x5C0F;&#x9F8D;</p>
+            <p>
+              Putra pertama dari Bapak Andi
+              <span>(葉碧詳)</span> & Ibu Yulinawati
+              <span>(李碧雲)</span>
+            </p>
+          </article>
+
+          <div class="double-happiness" aria-hidden="true"></div>
+
+          <article class="profile-card">
+            <p class="role">Mempelai Wanita</p>
+            <h3>Desy Linsa</h3>
+            <p class="hanzi small">&#x8A31;&#x96EA;&#x742A;</p>
+            <p>
+              Putri pertama dari Bapak Tjong Kui
+              <span>(許崇貴)</span> & Ibu Sa Moi
+              <span>(植麗美)</span>
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="event-section" id="event">
+        <div class="section-heading">
+          <p class="eyebrow">Save the Date</p>
+          <h2>Rangkaian Acara</h2>
+        </div>
+
+        <div class="countdown" aria-label="Hitung mundur menuju pemberkatan">
+          <div><strong id="days">00</strong><span>Hari</span></div>
+          <div><strong id="hours">00</strong><span>Jam</span></div>
+          <div><strong id="minutes">00</strong><span>Menit</span></div>
+          <div><strong id="seconds">00</strong><span>Detik</span></div>
+        </div>
+
+        <div class="event-grid">
+          <article class="event-card">
+            <p class="role">Pemberkatan</p>
+            <h3>Sabtu, 24 April 2027</h3>
+            <p>12.00 WIB</p>
+            <p>Vihara Dharmakirti</p>
+            <a
+              class="text-button"
+              href="https://www.google.com/maps/place/Dharmakirti+Temple/@-4.5571274,104.4609425,554691m/data=!3m1!1e3!4m10!1m2!2m1!1svihara+dharma+kirti!3m6!1s0x2e3b75d92d3560ed:0x4a7ad5e18df9bc1e!8m2!3d-2.9717522!4d104.7485474!15sChN2aWhhcmEgZGhhcm1hIGtpcnRpkgEPYnVkZGhpc3RfdGVtcGxl4AEA!16s%2Fg%2F1pzvqx0pj?entry=ttu&g_ep=EgoyMDI2MDQyOC4wIKXMDSoASAFQAw%3D%3D"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Buka Maps
+            </a>
+          </article>
+
+          <article class="event-card">
+            <p class="role">Resepsi</p>
+            <h3>Minggu, 25 April 2027</h3>
+            <p>12.00 WIB</p>
+            <p>Yap Ballroom</p>
+            <a
+              class="text-button"
+              href="https://www.google.com/maps/place/YAP+Ballroom/@-2.9718653,104.7472184,1085m/data=!3m2!1e3!4b1!4m6!3m5!1s0x2e3b75df3c1a0171:0x4e02b080b28f91c9!8m2!3d-2.9718707!4d104.7497933!16s%2Fg%2F11ckqsyz59?entry=ttu&g_ep=EgoyMDI2MDQyOC4wIKXMDSoASAFQAw%3D%3D"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Buka Maps
+            </a>
+          </article>
+        </div>
+      </section>
+
+      <section class="gallery-section" id="gallery">
+        <div class="section-heading">
+          <p class="eyebrow">Moments</p>
+          <h2>Galeri</h2>
+        </div>
+        <div class="gallery">
+          <img src="https://hamtaro86.github.io/joviANDesy/DSCF7807.JPG" alt="Galeri Jovian dan Desy 1" />
+          <img src="https://hamtaro86.github.io/joviANDesy/DSCF7811.JPG" alt="Galeri Jovian dan Desy 2" />
+          <img src="https://hamtaro86.github.io/joviANDesy/retouch_2025052822383217.jpg" alt="Galeri Jovian dan Desy 3" />
+          <img src="https://hamtaro86.github.io/joviANDesy/IMG_9050.jpg" alt="Galeri Jovian dan Desy 4" />
+          <img src="https://hamtaro86.github.io/joviANDesy/IMG_8939(1).jpg" alt="Galeri Jovian dan Desy 5" />
+        </div>
+      </section>
+
+      <section class="wish-section" id="wish">
+        <div class="section-heading">
+          <p class="eyebrow">Ucapan & Doa</p>
+          <h2>Kirim Ucapan</h2>
+        </div>
+        <form class="wish-form" id="wishForm">
+          <input id="guestName" type="text" placeholder="Nama" required />
+          <textarea id="guestWish" rows="4" placeholder="Tulis ucapan terbaikmu" required></textarea>
+          <button class="primary-button" type="submit">Kirim Ucapan</button>
+        </form>
+        <div class="wish-list" id="wishList" aria-live="polite"></div>
+      </section>
+
+      <section class="rsvp-section" id="rsvp">
+        <div>
+          <p class="eyebrow">Reservation</p>
+          <h2>Konfirmasi Kehadiran</h2>
+          <p>
+            Dengan penuh sukacita, kami menantikan kehadiran keluarga dan sahabat.
+          </p>
+        </div>
+        <a
+          class="primary-button"
+          id="whatsappRsvp"
+          href="https://wa.me/6287777538203?text=Halo%2C%20saya%20ingin%20konfirmasi%20kehadiran%20untuk%20pernikahan%20Jovian%20%26%20Desy.%0ANama%3A%20%0AJumlah%20tamu%3A%20%0AKehadiran%3A%20Hadir"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Reservasi via WhatsApp
+        </a>
+      </section>
+    </main>
+
+    <div class="wish-toast" id="wishToast" aria-live="polite"></div>
+
+    <button class="music-toggle" id="musicToggle" type="button" aria-label="Putar musik">
+      <span class="music-icon">&#9834;</span>
+      <span>
+        <strong id="songTitle">Wedding Song</strong>
+        <small id="musicState">Klik untuk memutar</small>
+      </span>
+    </button>
+    <audio
+      id="weddingMusic"
+      src="https://hamtaro86.github.io/joviANDesy/Hotaru%20-%20Adventure%20Of%20Love.mp3"
+      loop
+      preload="metadata"
+    ></audio>
+
+    <script>
+const weddingDate = new Date("2027-04-24T12:00:00+07:00");
+const countdownIds = ["days", "hours", "minutes", "seconds"];
+const envelopeGate = document.getElementById("envelopeGate");
+const envelope = document.getElementById("envelope");
+const openEnvelope = document.getElementById("openEnvelope");
+const music = document.getElementById("weddingMusic");
+const musicToggle = document.getElementById("musicToggle");
+const musicState = document.getElementById("musicState");
+const songTitle = document.getElementById("songTitle");
+const wishForm = document.getElementById("wishForm");
+const wishList = document.getElementById("wishList");
+const wishToast = document.getElementById("wishToast");
+const guestNameInput = document.getElementById("guestName");
+const gateGuest = document.getElementById("gateGuest");
+const cardGuest = document.getElementById("cardGuest");
+const heroGuest = document.getElementById("heroGuest");
+const whatsappRsvp = document.getElementById("whatsappRsvp");
+const savedWishes = JSON.parse(localStorage.getItem("jovianDesyWishes") || "[]");
+
+const defaultGuestName = "Bapak/Ibu/Saudara/i";
+const personalGuestName = getPersonalGuestName();
+const envelopeCardDelay = 2000;
+const envelopeCloseDelay = 5200;
+let hasOpenedInvitation = false;
+
+const starterWishes = [
+  {
+    name: "Keluarga Besar",
+    message: "Semoga Jovian dan Desy selalu berbahagia, saling menguatkan, dan diberkahi dalam perjalanan baru ini.",
+  },
+  {
+    name: "Sahabat",
+    message: "Selamat menempuh hidup baru. Semoga cinta dan kebahagiaan selalu menyertai kalian berdua.",
+  },
+];
+
+function getPersonalGuestName() {
+  const params = new URLSearchParams(window.location.search);
+  const rawGuestName = params.get("to") || params.get("nama") || params.get("guest") || params.get("tamu") || "";
+  return rawGuestName.replace(/\s+/g, " ").trim().slice(0, 80);
+}
+
+function updateWhatsappRsvp(guestName) {
+  const message = [
+    "Halo, saya ingin konfirmasi kehadiran untuk pernikahan Jovian & Desy.",
+    `Nama: ${guestName || ""}`,
+    "Jumlah tamu: ",
+    "Kehadiran: Hadir",
+  ].join("\n");
+
+  whatsappRsvp.href = `https://wa.me/6287777538203?text=${encodeURIComponent(message)}`;
+}
+
+function applyPersonalGuestName() {
+  const displayName = personalGuestName || defaultGuestName;
+
+  [gateGuest, cardGuest, heroGuest].forEach((element) => {
+    element.textContent = displayName;
+  });
+
+  if (personalGuestName) {
+    guestNameInput.value = personalGuestName;
+  }
+
+  updateWhatsappRsvp(personalGuestName);
+}
+
+function updateCountdown() {
+  const diff = weddingDate.getTime() - Date.now();
+  const safeDiff = Math.max(diff, 0);
+  const days = Math.floor(safeDiff / (1000 * 60 * 60 * 24));
+  const hours = Math.floor((safeDiff / (1000 * 60 * 60)) % 24);
+  const minutes = Math.floor((safeDiff / (1000 * 60)) % 60);
+  const seconds = Math.floor((safeDiff / 1000) % 60);
+  [days, hours, minutes, seconds].forEach((value, index) => {
+    document.getElementById(countdownIds[index]).textContent = String(value).padStart(2, "0");
+  });
+}
+
+function makeFallingItem(className, parent) {
+  const item = document.createElement("span");
+  item.className = className;
+  item.style.left = `${Math.random() * 100}%`;
+  item.style.animationDuration = `${10 + Math.random() * 12}s`;
+  item.style.animationDelay = `${Math.random() * -16}s`;
+  item.style.setProperty("--drift", `${-80 + Math.random() * 160}px`);
+  item.style.opacity = `${0.38 + Math.random() * 0.54}`;
+  item.style.scale = `${0.7 + Math.random() * 1.25}`;
+  parent.appendChild(item);
+}
+
+function buildAtmosphere() {
+  const petalField = document.querySelector(".petal-field");
+  const snowField = document.querySelector(".snow-field");
+  for (let i = 0; i < 38; i += 1) makeFallingItem("petal", petalField);
+  for (let i = 0; i < 46; i += 1) makeFallingItem("snow", snowField);
+}
+
+function setMusicTitle() {
+  const fileName = decodeURIComponent((music.currentSrc || music.src).split("/").pop() || "Wedding Song");
+  songTitle.textContent = fileName.includes("pVicTfBDz") ? "Wedding Song" : fileName;
+}
+
+async function startMusic() {
+  if (!music.paused) return;
+  try {
+    await music.play();
+    musicState.textContent = "Sedang diputar";
+    musicToggle.classList.add("playing");
+  } catch {
+    musicState.textContent = "Klik sekali lagi untuk memutar";
+  }
+}
+
+async function toggleMusic() {
+  if (music.paused) {
+    await startMusic();
+  } else {
+    music.pause();
+    musicState.textContent = "Musik dijeda";
+    musicToggle.classList.remove("playing");
+  }
+}
+
+function enterInvitation() {
+  if (hasOpenedInvitation) return;
+  hasOpenedInvitation = true;
+  openEnvelope.textContent = "Membuka...";
+  envelopeGate.classList.add("opening");
+  window.setTimeout(() => {
+    openEnvelope.textContent = "Masuk ke Undangan";
+  }, envelopeCardDelay);
+  window.setTimeout(() => {
+    envelopeGate.classList.add("hidden");
+    document.body.classList.remove("invitation-locked");
+    startMusic();
+  }, envelopeCloseDelay);
+}
+
+function scrollToCouple() {
+  document.getElementById("couple").scrollIntoView({ behavior: "smooth" });
+  startMusic();
+}
+
+function showWishToast({ name, message }) {
+  wishToast.replaceChildren();
+  const toastName = document.createElement("strong");
+  const toastMessage = document.createElement("p");
+  toastName.textContent = name;
+  toastMessage.textContent = message;
+  wishToast.append(toastName, toastMessage);
+  wishToast.classList.add("show");
+  window.clearTimeout(showWishToast.timer);
+  showWishToast.timer = window.setTimeout(() => wishToast.classList.remove("show"), 4200);
+}
+
+function renderWish({ name, message }) {
+  const item = document.createElement("article");
+  item.className = "wish-item";
+  const cleanName = document.createElement("strong");
+  const cleanMessage = document.createElement("p");
+  cleanName.textContent = name;
+  cleanMessage.textContent = message;
+  item.append(cleanName, cleanMessage);
+  wishList.prepend(item);
+}
+
+function handleWish(event) {
+  event.preventDefault();
+  const name = document.getElementById("guestName").value.trim();
+  const message = document.getElementById("guestWish").value.trim();
+  if (!name || !message) return;
+  const nextWish = { name, message };
+  renderWish(nextWish);
+  showWishToast(nextWish);
+  const updatedWishes = [nextWish, ...savedWishes].slice(0, 30);
+  localStorage.setItem("jovianDesyWishes", JSON.stringify(updatedWishes));
+  savedWishes.unshift(nextWish);
+  wishForm.reset();
+  if (personalGuestName) {
+    guestNameInput.value = personalGuestName;
+  }
+}
+
+openEnvelope.addEventListener("click", enterInvitation);
+envelope.addEventListener("click", enterInvitation);
+document.getElementById("openInvitation").addEventListener("click", scrollToCouple);
+musicToggle.addEventListener("click", toggleMusic);
+wishForm.addEventListener("submit", handleWish);
+music.addEventListener("loadedmetadata", setMusicTitle);
+applyPersonalGuestName();
+(savedWishes.length ? savedWishes : starterWishes).forEach(renderWish);
+buildAtmosphere();
+setMusicTitle();
+updateCountdown();
+setInterval(updateCountdown, 1000);
+    </script>
+  </body>
+</html>
